@@ -137,7 +137,7 @@ pub struct LWEParams {
 impl Default for LWEParams {
     fn default() -> Self {
         Self {
-            n: 1024,
+            n: 2048,
             modulus: 1u64 << 32,
             pt_modulus: 256,
             q2_bits: 28,

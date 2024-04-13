@@ -226,6 +226,7 @@ pub fn run_ypir_on_params<const K: usize>(params: Params, trials: usize) -> Meas
     let db_cols = 1 << (params.db_dim_2 + params.poly_len_log2);
 
     let sqrt_n_bytes = db_cols * (lwe_params.pt_modulus as f64).log2().floor() as usize / 8;
+    println!("{} {}, {}", db_rows, db_cols, sqrt_n_bytes);
 
     // let pt_iter = std::iter::repeat_with(|| {
     //     if params.pt_modulus == 1 << 16 {
