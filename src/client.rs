@@ -139,7 +139,7 @@ impl Default for LWEParams {
         Self {
             n: 2048,
             modulus: 1u64 << 32,
-            pt_modulus: 256,
+            pt_modulus: 838,
             q2_bits: 28,
             noise_width: 27.57291103, // 11 * sqrt(2*pi)
         }
